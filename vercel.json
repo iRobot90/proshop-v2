@@ -1,0 +1,16 @@
+{
+    "builds": [
+      {
+        "src": "frontend/package.json",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "backend/package.json",
+        "use": "@vercel/node"
+      }
+    ],
+    "env": {
+      "MONGO_URI": "mongodb+srv://codeschris:NQecNwifOj0fPryp@cluster0.rw4hkwi.mongodb.net/?retryWrites=true&w=majority"
+    }
+}
+  
