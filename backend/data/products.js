@@ -12,6 +12,17 @@ const products = [
     numReviews: 12,
   },
   {
+    name: 'Roka Laptop Sleeve',
+    image: '/images/rokabag.jpg',
+    description: 'Get your laptop feeling comfy with this new Laptop Sleeve created from recycled banners and quality branding material. The bag is made to serve for a good time while standing out among other bags out there. Get the premium look while enjoying the comfort of carrying this around.',
+    brand: 'Roka',
+    category: 'Fashion',
+    price: 950.00,
+    countInStock: 10,
+    rating: 4.0,
+    numReviews: 1,
+  },
+  {
     name: 'iPhone 13 Pro 256GB Memory',
     image: '/images/phone.jpg',
     description:
@@ -83,19 +94,8 @@ const products = [
     numReviews: 1,
   },
   {
-    name: 'Roka Laptop Sleeve',
-    image: '/images/laptopsleeve.jpeg',
-    description: 'Sleeve your precious,well tucked!!',
-    brand: 'Roka',
-    category: 'Fashion',
-    price: 1499.99,
-    countInStock: 100,
-    rating: 4.0,
-    numReviews: 1,
-  },
-  {
     name: 'Roka Lunchbox',
-    image: '/images/lunchbox.jpeg',
+    image: '/images/lunchbox.jpg',
     description: 'Keep that yummy warm!!',
     brand: 'Roka',
     category: 'Fashion',
@@ -106,7 +106,7 @@ const products = [
   },
   {
     name: 'Roka Pencil Pouch',
-    image: '/images/pencilpoach.jpeg',
+    image: '/images/pencilpoach.jpg',
     description: 'Pack all your pointies!!',
     brand: 'Roka',
     category: 'Fashion',

@@ -38,7 +38,7 @@ const Header = () => {
   };
 
   return (
-    <header>
+    <header className='text-white'>
       <Navbar bg='primary' variant='blue' expand='lg' collapseOnSelect>
         <Container>
           <LinkContainer to='/'>
