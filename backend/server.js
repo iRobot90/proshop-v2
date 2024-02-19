@@ -41,6 +41,8 @@ app.get('/api/config/paypal', (req, res) => {
 });
 
 // Serve static assets in production
+
+// Serve static assets in production
 if (process.env.NODE_ENV === 'production') {
   const __dirname = path.resolve();
   app.use('/uploads', express.static('/var/data/uploads'));
