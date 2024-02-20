@@ -28,6 +28,10 @@ app.use('/api/users', userRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/upload', uploadRoutes);
 
+app.get('/api/hello', (req, res) => {
+  res.send('Hello from the backend!');
+});
+
 app.get('/api/config/paypal', (req, res) => {
   // Forward the request to the PayPal API
   axios.get('https://www.sandbox.paypal.com/xoplatform/logger/api/logger?disableSetCookie=true')
