@@ -16,13 +16,8 @@ connectDB();
 
 const app = express();
 const port = process.env.PORT || 5000;
-const corsOptions = {
-  origin: "https://proshop-v2-roan.vercel.app/",
-  methods: ['POST', 'GET'],
-  credentials: true
-}
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
