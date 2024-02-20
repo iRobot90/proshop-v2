@@ -16,6 +16,13 @@ connectDB();
 
 const app = express();
 const port = process.env.PORT || 5000;
+/* Will be configured for the frontend
+
+const corsOptions = {
+  origin: "https://sanaaartshop.vercel.app",
+  methods: ['POST', 'GET'],
+  credentials: true
+}*/
 
 app.use(cors());
 app.use(express.json());
@@ -29,7 +36,7 @@ app.use('/api/orders', orderRoutes);
 app.use('/api/upload', uploadRoutes);
 
 app.get('/api/hello', (req, res) => {
-  res.send('Hello from the backend!');
+  res.json('Hello from the backend!');
 });
 
 app.get('/api/config/paypal', (req, res) => {
@@ -60,6 +67,7 @@ if (process.env.NODE_ENV === 'production') {
   app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
   app.get('/', (req, res) => {
     res.send('API is running....');
+    res.json('API is running...'); // An alternative for showing response
   });
 }
 
