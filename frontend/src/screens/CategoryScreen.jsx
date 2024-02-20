@@ -1,0 +1,1 @@
+// Sorting and displaying products according to their categories
