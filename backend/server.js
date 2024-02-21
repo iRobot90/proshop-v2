@@ -60,7 +60,6 @@ if (process.env.NODE_ENV === 'production') {
   app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
   app.get('/', (req, res) => {
     res.send('API is running....');
-    res.json('API is running...'); // An alternative for showing response
   });
 }
 
