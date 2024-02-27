@@ -14,9 +14,7 @@ import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 dotenv.config();
 connectDB();
 
-//const whitelist = ['https://musical-space-barnacle-jgvwjj4gr5j3jg-3000.app.github.dev', 'https://www.swahilipothub.co.ke/blog/acknowledging-and-expressing-emotions-in-casket-of-emotions-a-review',  'http://localhost:3000'];
-
-/*CORS options for whitelisting domains and handling CORS for multiple connections and testing
+const whitelist = ['https://sanaaart-api.onrender.com', 'https://sanaaartshop.vercel.app/', 'http://localhost:3000'];
 
 const corsOptions = {
     origin: function (origin, callback) {
@@ -26,12 +24,12 @@ const corsOptions = {
             callback(new Error('Not allowed by CORS'))
         }
     }
-};*/
+};
 
 const app = express();
 const port = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
