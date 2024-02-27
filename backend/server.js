@@ -14,9 +14,9 @@ import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 dotenv.config();
 connectDB();
 
-const whitelist = ['https://sanaaart-api.onrender.com', 'https://sanaaartshop.vercel.app/', 'http://localhost:3000'];
+//const whitelist = ['https://sanaaart-api.onrender.com', 'https://sanaaartshop.vercel.app/', 'http://localhost:3000'];
 
-const corsOptions = {
+/*const corsOptions = {
     origin: function (origin, callback) {
         if (whitelist.includes(origin)) {
             callback(null, true)
@@ -24,12 +24,12 @@ const corsOptions = {
             callback(new Error('Not allowed by CORS'))
         }
     }
-};
+};*/
 
 const app = express();
 const port = process.env.PORT || 5000;
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
