@@ -14,16 +14,12 @@ import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 dotenv.config();
 connectDB();
 
-const whitelist = ['https://sanaaartshop.vercel.app/', 'http://localhost:3000'];
-
 const corsOptions = {
-    origin: function (origin, callback) {
-        if (whitelist.includes(origin)) {
-            callback(null, true)
-        } else {
-            callback(new Error('Not allowed by CORS'))
-        }
-    }
+  origin: 'https://sanaaart-api.onrender.com',
+  credentials: true,
+  methods: ['GET','POST','HEAD','PUT','PATCH','DELETE'],
+  allowedHeaders: ['Content-Type'],
+  exposedHeaders: ['Content-Type']
 };
 
 const app = express();
