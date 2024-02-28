@@ -15,7 +15,7 @@ dotenv.config();
 connectDB();
 
 const corsOptions = {
-  origin: 'https://sanaaart-api.onrender.com',
+  origin: ['https://sanaaart-api.onrender.com', 'https://sanaaartshop.vercel.app'],
   credentials: true,
   methods: ['GET','POST','HEAD','PUT','PATCH','DELETE'],
   allowedHeaders: ['Content-Type'],
