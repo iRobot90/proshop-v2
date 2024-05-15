@@ -106,38 +106,22 @@ const Header = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      {/** Category Menu Section */}
+      {/* Category Menu Section */}
       <div className="bg-light py-2">
-        <Container>
-          <div className="d-flex flex-row overflow-auto gap-4">
-            <Link to='/category/crafts/' style={{textDecoration: 'none'}}>
-              <NavDropdown.Item>Crafts</NavDropdown.Item>
-            </Link>
-            <Link to='/category/fashion/' style={{textDecoration: 'none'}}>
-              <NavDropdown.Item>Fashion</NavDropdown.Item>
-            </Link>
-            <Link to='/category/visual-arts/' style={{textDecoration: 'none'}}>
-              <NavDropdown.Item>Visual Arts</NavDropdown.Item>
-            </Link>
-            <Link to='/category/music/' style={{textDecoration: 'none'}}>
-              <NavDropdown.Item>Music</NavDropdown.Item>
-            </Link>
-            <Link to='/category/performers/' style={{textDecoration: 'none'}}>
-              <NavDropdown.Item>Performers</NavDropdown.Item>
-            </Link>
-            <Link to='/category/films/' style={{textDecoration: 'none'}}>
-              <NavDropdown.Item>Films</NavDropdown.Item>
-            </Link>
-            <Link to='/category/theatre-plays/' style={{textDecoration: 'none'}}>
-              <NavDropdown.Item>Theatre plays</NavDropdown.Item>
-            </Link>
-            <Link to='/category/digital-media/' style={{textDecoration: 'none'}}>
-              <NavDropdown.Item>Digital Media</NavDropdown.Item>
-            </Link>
-          </div>
-        </Container>
-      </div>
-      {/** Category Menu Section */}
+  <Container>
+    <div className="d-flex text-black flex-row overflow-auto gap-4">
+      <Link to='/category/crafts' className="nav-link">Crafts</Link>
+      <Link to='/category/fashion' className="nav-link">Fashion</Link>
+      <Link to='/category/visual-arts' className="nav-link">Visual Arts</Link>
+      <Link to='/category/music' className="nav-link">Music</Link>
+      <Link to='/category/performers' className="nav-link">Performers</Link>
+      <Link to='/category/films' className="nav-link">Films</Link>
+      <Link to='/category/theatre-plays' className="nav-link">Theatre plays</Link>
+      <Link to='/category/digital-media' className="nav-link">Digital Media</Link>
+    </div>
+  </Container>
+</div>
+{/* Category Menu Section */}
     </header>
   );
 };
